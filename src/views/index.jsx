@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import Router from "./router/router";
 
-class App extends Component {
+class Index extends Component {
     render() {
         return (
             <React.Fragment>
-                <Router />
+                
             </React.Fragment>
         )
     }
 }
 
-export default App;
+export default Index;
