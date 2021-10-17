@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CardPokemon from "./partials/card-pokemon";
+import CardStatistics from "./partials/card-statistics";
 
 class Index extends Component {
     render() {
@@ -20,7 +21,14 @@ class Index extends Component {
                                 </div>
                             </div>
                         </div>
-                        <CardPokemon />
+                        <div className="row">
+                            <div className="col-md-6 mb-5">
+                                <CardPokemon />
+                            </div>
+                            <div className="col-md-6 mb-5">
+                                <CardStatistics />
+                            </div>
+                        </div>
                     </div>
                 </main>
             </React.Fragment>
