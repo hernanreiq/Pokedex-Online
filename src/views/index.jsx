@@ -29,6 +29,7 @@ class Index extends Component {
                     searched: false
                 });
             }
+            console.log(this.state.pokemon)
         })
     }
 
@@ -63,7 +64,6 @@ class Index extends Component {
                             <div className="row">
                                 <div className="col-md-6 mb-5">
                                     <CardPokemon
-                                        photo={this.state.pokemon.sprites.front_default}
                                         name={this.state.pokemon.name}
                                         id={this.state.pokemon.id}
                                         types={this.state.pokemon.types}

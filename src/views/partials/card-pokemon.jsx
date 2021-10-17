@@ -3,6 +3,26 @@ import { CapitalizeFirstLetter } from "../helpers/functions";
 import CardTypes from "./card-types";
 
 class CardPokemon extends Component {
+    state = {
+        image: ''
+    }
+
+    updateImage = (pokemonId) => {
+        this.setState({
+            image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`,
+        })
+    }
+
+    componentDidMount() {
+        this.updateImage(this.props.id);
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.id !== this.props.id) {
+            this.updateImage(this.props.id);
+        }
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -11,7 +31,7 @@ class CardPokemon extends Component {
                         <h2 className="card-title mb-0 text-center">{CapitalizeFirstLetter(this.props.name)} <span className="badge badge-light text-danger">{this.props.id}</span></h2>
                     </div>
                     <div className="card-body">
-                        <img src={this.props.photo} alt={this.props.name} className="card-img" />
+                        <img src={this.state.image} alt={this.props.name} className="card-img" />
                     </div>
                     {this.props.types.length > 0 &&
                         <CardTypes
