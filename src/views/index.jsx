@@ -29,7 +29,6 @@ class Index extends Component {
                     searched: false
                 });
             }
-            console.log(this.state.pokemon)
         })
     }
 
@@ -73,6 +72,7 @@ class Index extends Component {
                                 <div className="col-md-6 mb-5">
                                     <CardStatistics
                                         stats={this.state.pokemon.stats}
+                                        abilities={this.state.pokemon.abilities}
                                     />
                                 </div>
                             </div>
