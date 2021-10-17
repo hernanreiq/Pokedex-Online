@@ -4,7 +4,7 @@ class CardStatistics extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="card shadow">
+                <div className="card shadow rounded overflow-hidden">
                     <div className="card-header">
                         <h2 className="card-title mb-0 text-center">Statistics</h2>
                     </div>

@@ -67,6 +67,7 @@ class Index extends Component {
                                         photo={this.state.pokemon.sprites.front_default}
                                         name={this.state.pokemon.name}
                                         id={this.state.pokemon.id}
+                                        types={this.state.pokemon.types}
                                     />
                                 </div>
                                 <div className="col-md-6 mb-5">

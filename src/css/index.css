@@ -20,6 +20,7 @@ p {
   --negro-gris: #2b2a2a;
   --blanco-crema: #ECE9E6;
   --blanco-gris: #a8a8a8;
+  --gris-negro: #474747;
 }
 header, .card-header {
   color: #ffffff;
@@ -33,8 +34,13 @@ header, .card-header {
   background: -webkit-linear-gradient(to right, var(--rojo-oscuro), var(--negro-gris), var(--rojo-oscuro));
   background: linear-gradient(to right, var(--rojo-oscuro), var(--negro-gris), var(--rojo-oscuro));
 }
-body {
+body, .card-footer {
   background: var(--blanco-crema);
   background: -webkit-linear-gradient(to right, var(--blanco-gris), var(--blanco-crema), var(--blanco-gris));
   background: linear-gradient(to right, var(--blanco-gris), var(--blanco-crema), var(--blanco-gris));
+}
+.card-body {
+  background: var(--blanco-gris);
+  background: -webkit-linear-gradient(to bottom, var(--gris-negro), var(--blanco-gris), var(--gris-negro));
+  background: linear-gradient(to bottom, var(--gris-negro), var(--blanco-gris), var(--gris-negro));
 }
