@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { CapitalizeFirstLetter } from "../helpers/functions";
+import CardTypes from "./card-types";
 
 class CardPokemon extends Component {
     render() {
@@ -12,9 +13,11 @@ class CardPokemon extends Component {
                     <div className="card-body">
                         <img src={this.props.photo} alt={this.props.name} className="card-img" />
                     </div>
-                    <div className="card-footer text-center">
-                        <h5 className="mb-0">Type: <span className="badge badge-dark">{CapitalizeFirstLetter(this.props.types[0].type.name)}</span></h5>
-                    </div>
+                    {this.props.types.length > 0 &&
+                        <CardTypes
+                            types={this.props.types}
+                        />
+                    }
                 </div>
             </React.Fragment >
         )
