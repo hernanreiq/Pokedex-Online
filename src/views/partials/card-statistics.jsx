@@ -13,27 +13,27 @@ class CardStatistics extends Component {
                             <tbody>
                                 <tr>
                                     <th scope="row">HP</th>
-                                    <td>100</td>
+                                    <td>{this.props.stats[0].base_stat}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Attack</th>
-                                    <td>15</td>
+                                    <td>{this.props.stats[1].base_stat}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Defense</th>
-                                    <td>30</td>
+                                    <td>{this.props.stats[2].base_stat}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Special Attack</th>
-                                    <td>25</td>
+                                    <td>{this.props.stats[3].base_stat}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Special Defense</th>
-                                    <td>45</td>
+                                    <td>{this.props.stats[4].base_stat}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Speed</th>
-                                    <td>20</td>
+                                    <td>{this.props.stats[5].base_stat}</td>
                                 </tr>
                             </tbody>
                         </table>
