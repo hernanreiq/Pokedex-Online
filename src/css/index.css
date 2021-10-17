@@ -7,17 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 h1 {
+  text-shadow: 1px 1px 1px black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p {
+  text-shadow: 1px 1px 1px black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 :root {
   --rojo-oscuro: #61150d;
   --rojo-claro: #ED213A;
   --negro-gris: #2b2a2a;
+  --blanco-crema: #ECE9E6;
+  --blanco-gris: #a8a8a8;
 }
-header {
+header, .card-header {
   color: #ffffff;
   background: var(--rojo-claro);
   background: -webkit-linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
@@ -28,4 +32,9 @@ header {
   background: var(--negro-gris);
   background: -webkit-linear-gradient(to right, var(--rojo-oscuro), var(--negro-gris), var(--rojo-oscuro));
   background: linear-gradient(to right, var(--rojo-oscuro), var(--negro-gris), var(--rojo-oscuro));
+}
+body {
+  background: var(--blanco-crema);
+  background: -webkit-linear-gradient(to right, var(--blanco-gris), var(--blanco-crema), var(--blanco-gris));
+  background: linear-gradient(to right, var(--blanco-gris), var(--blanco-crema), var(--blanco-gris));
 }
