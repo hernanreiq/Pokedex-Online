@@ -5,7 +5,7 @@ class CardAbilities extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="card shadow rounded overflow-hidden">
+                <div className="card shadow rounded overflow-hidden mb-4">
                     <div className="card-header">
                         {this.props.abilities.length > 1 ?
                             <h2 className="card-title mb-0 text-center">Abilities</h2> :

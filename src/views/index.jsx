@@ -18,21 +18,29 @@ class Index extends Component {
 
     searchPokemon = () => {
         var nameId = this.nameIdPokemonRef.current.value;
-        var pokemon = GetPokemon(nameId)
-        pokemon.then(res => {
-            if (!res.err) {
-                this.setState({
-                    err: false,
-                    pokemon: res.data,
-                    searched: true
-                });
-            } else {
-                this.setState({
-                    err: true,
-                    searched: false
-                });
-            }
-        })
+        this.nameIdPokemonRef.current.value = '';
+        if (nameId){
+            var pokemon = GetPokemon(nameId);
+            pokemon.then(res => {
+                if (!res.err) {
+                    this.setState({
+                        err: false,
+                        pokemon: res.data,
+                        searched: true
+                    });
+                } else {
+                    this.setState({
+                        err: true,
+                        searched: false
+                    });
+                }
+            })
+        } else {
+            this.setState({
+                err: false,
+                searched: false
+            })
+        }
     }
 
     enterKeyDown = (e) => {
@@ -67,13 +75,13 @@ class Index extends Component {
                         }
                         {this.state.searched &&
                             <div className="row">
-                                <div className="col-md-6 mb-5">
+                                <div className="col-md-6">
                                     <CardPokemon
                                         name={this.state.pokemon.name}
                                         id={this.state.pokemon.id}
                                     />
                                 </div>
-                                <div className="col-md-6 mb-5">
+                                <div className="col-md-6">
                                     <CardTypes types={this.state.pokemon.types} />
                                     <CardStatistics stats={this.state.pokemon.stats} />
                                     <CardAbilities abilities={this.state.pokemon.abilities} />
