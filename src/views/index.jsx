@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import CardPokemon from "./partials/card-pokemon";
+import CardTypes from "./partials/card-types";
 import CardStatistics from "./partials/card-statistics";
+import CardAbilities from "./partials/card-abilities";
 import { GetPokemon } from "./helpers/axios-http";
 
 class Index extends Component {
@@ -66,14 +68,12 @@ class Index extends Component {
                                     <CardPokemon
                                         name={this.state.pokemon.name}
                                         id={this.state.pokemon.id}
-                                        types={this.state.pokemon.types}
                                     />
                                 </div>
                                 <div className="col-md-6 mb-5">
-                                    <CardStatistics
-                                        stats={this.state.pokemon.stats}
-                                        abilities={this.state.pokemon.abilities}
-                                    />
+                                    <CardTypes types={this.state.pokemon.types} />
+                                    <CardStatistics stats={this.state.pokemon.stats} />
+                                    <CardAbilities abilities={this.state.pokemon.abilities} />
                                 </div>
                             </div>
                         }

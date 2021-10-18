@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import CardAbilities from "./card-abilities";
 
 class CardStatistics extends Component {
     render() {
@@ -40,11 +39,6 @@ class CardStatistics extends Component {
                         </table>
                     </div>
                 </div>
-                {this.props.abilities[0] &&
-                    <CardAbilities
-                        abilities={this.props.abilities}
-                    />
-                }
             </React.Fragment >
         )
     }
