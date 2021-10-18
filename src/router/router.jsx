@@ -9,8 +9,7 @@ class Router extends Component {
             <BrowserRouter>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={Index} />
-                    <Route exact path="/home" component={Index} />
+                    <Route path="*" component={Index} />
                 </Switch>
             </BrowserRouter>
         )
