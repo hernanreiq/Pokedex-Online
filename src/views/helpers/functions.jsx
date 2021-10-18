@@ -3,7 +3,7 @@ export const CapitalizeFirstLetter = (text) => {
     return result;
 }
 
-export const TransformAbilitiesText = (text) => {
+export const TransformTextStrings = (text) => {
     var result = '';
     var ability = text.charAt(0).toUpperCase() + text.slice(1);
     ability = ability.split('-');

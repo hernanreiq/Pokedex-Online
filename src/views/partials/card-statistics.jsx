@@ -5,7 +5,7 @@ class CardStatistics extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="card shadow rounded overflow-hidden">
+                <div className="card shadow rounded overflow-hidden mb-4">
                     <div className="card-header">
                         <h2 className="card-title mb-0 text-center">Statistics</h2>
                     </div>
@@ -39,12 +39,12 @@ class CardStatistics extends Component {
                             </tbody>
                         </table>
                     </div>
-                    {this.props.abilities[0] &&
-                        <CardAbilities
-                            abilities={this.props.abilities}
-                        />
-                    }
                 </div>
+                {this.props.abilities[0] &&
+                    <CardAbilities
+                        abilities={this.props.abilities}
+                    />
+                }
             </React.Fragment >
         )
     }

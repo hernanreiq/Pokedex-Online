@@ -1,30 +1,29 @@
 import React, { Component } from "react";
-import { TransformAbilitiesText } from "../helpers/functions";
+import { TransformTextStrings } from "../helpers/functions";
 
 class CardAbilities extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="card-header">
-                    {this.props.abilities.length > 1 ?
-                        <h2 className="card-title mb-0 text-center">Abilities</h2> :
-                        <h2 className="card-title mb-0 text-center">Ability</h2>
-                    }
-                </div>
-                <div className="card-body p-0 overflow-hidden">
-                    <table className="table table-dark mb-0">
-                        <tbody>
+                <div className="card shadow rounded overflow-hidden">
+                    <div className="card-header">
+                        {this.props.abilities.length > 1 ?
+                            <h2 className="card-title mb-0 text-center">Abilities</h2> :
+                            <h2 className="card-title mb-0 text-center">Ability</h2>
+                        }
+                    </div>
+                    <div className="card-footer text-center overflow-hidden">
+                        <h4 className="mb-0">
                             {this.props.abilities.map((pokemon, i) => {
                                 return (
-                                    <tr key={i}>
-                                        <th scope="row">#{i + 1}</th>
-                                        <td>{TransformAbilitiesText(pokemon.ability.name)}</td>
-                                    </tr>
+                                    <span className="badge badge-dark mx-1" key={i}>
+                                        {TransformTextStrings(pokemon.ability.name)}
+                                    </span>
                                 )
                             })
                             }
-                        </tbody>
-                    </table>
+                        </h4>
+                    </div>
                 </div>
             </React.Fragment >
         )

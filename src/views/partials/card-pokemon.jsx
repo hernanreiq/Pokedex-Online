@@ -9,7 +9,7 @@ class CardPokemon extends Component {
 
     updateImage = (pokemonId) => {
         this.setState({
-            image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`,
+            image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`
         })
     }
 
