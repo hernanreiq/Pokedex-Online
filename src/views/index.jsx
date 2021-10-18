@@ -17,7 +17,7 @@ class Index extends Component {
     nameIdPokemonRef = React.createRef();
 
     searchPokemon = () => {
-        var nameId = this.nameIdPokemonRef.current.value;
+        var nameId = (this.nameIdPokemonRef.current.value).toLowerCase();
         this.nameIdPokemonRef.current.value = '';
         if (nameId){
             var pokemon = GetPokemon(nameId);
