@@ -1,3 +1,6 @@
+import React from "react";
+import Pokeball from "../../img/pokeball.png";
+
 export const CapitalizeFirstLetter = (text) => {
     var result = text.charAt(0).toUpperCase() + text.slice(1);
     return result;
@@ -90,4 +93,16 @@ export const ColStyles = (PokemonTypesLength) => {
         result = 'col-md-4';
     }
     return result;
+}
+
+export const RainingPokeballs = (pokeballAmount) => {
+    var arrayPokeballs = [];
+    for (var i = 0; i < pokeballAmount; i++) {
+        arrayPokeballs.push(
+            <div className="snowflake" key={i}>
+                <img src={Pokeball} alt="Raining Pokeballs" className="pokeball"/>
+            </div>
+        )
+    }
+    return arrayPokeballs;
 }

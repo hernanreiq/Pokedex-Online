@@ -4,6 +4,7 @@ import CardTypes from "./partials/card-types";
 import CardStatistics from "./partials/card-statistics";
 import CardAbilities from "./partials/card-abilities";
 import { GetPokemon } from "./helpers/axios-http";
+import { RainingPokeballs } from "./helpers/functions";
 
 class Index extends Component {
     state = {
@@ -31,7 +32,6 @@ class Index extends Component {
                     searched: false
                 });
             }
-            console.log(this.state.pokemon)
         })
     }
 
@@ -45,6 +45,9 @@ class Index extends Component {
         return (
             <React.Fragment>
                 <main>
+                    <div id="snow-flakes">
+                        {RainingPokeballs(10)}
+                    </div>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 offset-md-3 my-5">
