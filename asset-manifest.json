@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Pokedex-Online/static/css/main.33220497.chunk.css",
-    "main.js": "/Pokedex-Online/static/js/main.dcd9e134.chunk.js",
-    "main.js.map": "/Pokedex-Online/static/js/main.dcd9e134.chunk.js.map",
+    "main.js": "/Pokedex-Online/static/js/main.c9dd928b.chunk.js",
+    "main.js.map": "/Pokedex-Online/static/js/main.c9dd928b.chunk.js.map",
     "runtime-main.js": "/Pokedex-Online/static/js/runtime-main.ad25e2d3.js",
     "runtime-main.js.map": "/Pokedex-Online/static/js/runtime-main.ad25e2d3.js.map",
     "static/css/2.081f420c.chunk.css": "/Pokedex-Online/static/css/2.081f420c.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.081f420c.chunk.css",
     "static/js/2.79a3e8d1.chunk.js",
     "static/css/main.33220497.chunk.css",
-    "static/js/main.dcd9e134.chunk.js"
+    "static/js/main.c9dd928b.chunk.js"
   ]
 }
