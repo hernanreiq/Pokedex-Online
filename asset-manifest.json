@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Pokedex-Online/static/css/main.33220497.chunk.css",
+    "main.js": "/Pokedex-Online/static/js/main.7e4f7ec6.chunk.js",
+    "main.js.map": "/Pokedex-Online/static/js/main.7e4f7ec6.chunk.js.map",
+    "runtime-main.js": "/Pokedex-Online/static/js/runtime-main.ad25e2d3.js",
+    "runtime-main.js.map": "/Pokedex-Online/static/js/runtime-main.ad25e2d3.js.map",
+    "static/css/2.081f420c.chunk.css": "/Pokedex-Online/static/css/2.081f420c.chunk.css",
+    "static/js/2.79a3e8d1.chunk.js": "/Pokedex-Online/static/js/2.79a3e8d1.chunk.js",
+    "static/js/2.79a3e8d1.chunk.js.map": "/Pokedex-Online/static/js/2.79a3e8d1.chunk.js.map",
+    "static/js/3.99dc05c2.chunk.js": "/Pokedex-Online/static/js/3.99dc05c2.chunk.js",
+    "static/js/3.99dc05c2.chunk.js.map": "/Pokedex-Online/static/js/3.99dc05c2.chunk.js.map",
+    "index.html": "/Pokedex-Online/index.html",
+    "static/css/2.081f420c.chunk.css.map": "/Pokedex-Online/static/css/2.081f420c.chunk.css.map",
+    "static/css/main.33220497.chunk.css.map": "/Pokedex-Online/static/css/main.33220497.chunk.css.map",
+    "static/js/2.79a3e8d1.chunk.js.LICENSE.txt": "/Pokedex-Online/static/js/2.79a3e8d1.chunk.js.LICENSE.txt",
+    "static/media/pokeball.8b2ee42b.png": "/Pokedex-Online/static/media/pokeball.8b2ee42b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad25e2d3.js",
+    "static/css/2.081f420c.chunk.css",
+    "static/js/2.79a3e8d1.chunk.js",
+    "static/css/main.33220497.chunk.css",
+    "static/js/main.7e4f7ec6.chunk.js"
+  ]
+}
